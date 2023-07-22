@@ -4,7 +4,6 @@ import LandingPage from './../Page/LandingPage';
 import Dashboard from './../Dashboard';
 import PreviewScreen from './../Page/PreviewScreen';
 
-
 const MyRouter = () => {
   return (
     <BrowserRouter>

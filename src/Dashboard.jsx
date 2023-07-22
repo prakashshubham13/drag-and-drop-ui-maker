@@ -3,7 +3,6 @@ import ComponentsBar from './Page/ComponentsBar'
 import SettingsBar from './Page/SettingsBar'
 import UiDropScreen from './Page/UiDropScreen'
 import "./App.css";
-import PreviewScreen from './Page/PreviewScreen';
 import {useSelector, useDispatch} from 'react-redux';
 import { deleteDataAction, dragDataAction, dropDataAction } from './redux/reducer1/action';
 import { Header } from './Page/Header';
@@ -23,7 +22,6 @@ const Dashboard = () => {
     {deleteData && <div className='popup_background'>
     <div className='popup'>
     <h3>Warning, this component will be permanently deleted!</h3>
-    <PreviewScreen/>
     <div className='popup_button'>
     <button className='danger_btn' onClick={()=>{
       let tempArr = dropData;

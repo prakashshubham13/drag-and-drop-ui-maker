@@ -7,12 +7,12 @@ const SettingsBar = () => {
   const dispatch = useDispatch();
   const editData = useSelector(state => state.editData);
   const dropData = useSelector(state => state.dropData);
-  console.log('====================================');
   console.log(dropData[editData?.index]?.cssRaw.settingHeight);
   console.log(editData.index);
   const [settingState, updateSettingState] = useState({
     settingHeight:0,
     settingWidth:0,
+    settingMargin:0,
     validator:"",
   })
   useEffect(() => {
