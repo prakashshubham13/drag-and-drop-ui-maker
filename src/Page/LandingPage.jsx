@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
   return (
     <div>
-      <div>Create New Page</div>
+      <Link to="/dashboard">Create New Page</Link>
       <div>Open Existing Page</div>
     </div>
   )
